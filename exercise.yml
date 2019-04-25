@@ -1,2 +1,4 @@
 server:
   port: 8080
+workout:
+  duration: 4  
