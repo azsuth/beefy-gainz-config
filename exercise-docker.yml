@@ -3,9 +3,18 @@ spring:
     hikari:
       connectionTimeout: 20000
       maximumPoolSize: 5
-    url: jdbc:postgresql://db:5432/postgres
+    url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
     password: azsuth
   jpa:
     hibernate:
-      ddl-auto: create 
+      ddl-auto: validate
+      show-sql: true
+      properties:
+        javax:
+          persistence:
+            schema-generation:
+              create-source: metadata
+              scripts:
+                action: create
+                create-target: database-create.sql
