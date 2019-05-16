@@ -4,8 +4,8 @@ spring:
       connectionTimeout: 20000
       maximumPoolSize: 5
     url: jdbc:postgresql://exercise-db:5432/exercise
-    username: postgres
-    password: azsuth
+    username: exercise_user
+    password: butthole
   jpa:
     hibernate:
       ddl-auto: validate
