@@ -9,3 +9,7 @@ spring:
   jpa:
     hibernate:
       ddl-auto: create
+logging:
+  level:
+    org.springframework: ERROR
+    com.azs.beefygainz.exercise: DEBUG      
